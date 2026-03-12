@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Realty - Find Your Perfect Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <span>DreamHome Realty</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-secondary">Login</button>
+                <button class="btn-primary">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Find Your Dream Home</h1>
+            <p>Discover the perfect property to call home</p>
+            <div class="search-box">
+                <div class="search-tabs">
+                    <button class="tab-btn active" data-tab="buy">Buy</button>
+                    <button class="tab-btn" data-tab="rent">Rent</button>
+                    <button class="tab-btn" data-tab="sell">Sell</button>
+                </div>
+                <div class="search-form">
+                    <input type="text" placeholder="Location, City, or ZIP" class="search-input">
+                    <select class="search-select">
+                        <option value="">Property Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="land">Land</option>
+                    </select>
+                    <select class="search-select">
+                        <option value="">Price Range</option>
+                        <option value="100000">$100,000 - $200,000</option>
+                        <option value="200000">$200,000 - $500,000</option>
+                        <option value="500000">$500,000 - $1,000,000</option>
+                        <option value="1000000">$1,000,000+</option>
+                    </select>
+                    <button class="btn-search"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="properties-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Explore our handpicked selection of premium properties</p>
+            </div>
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="condo">Condos</button>
+            </div>
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" data-type="house">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800" alt="Modern House">
+                        <div class="property-badge">Featured</div>
+                        <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">$450,000</div>
+                        <h3 class="property-title">Modern Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Beverly Hills, CA</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-outline">View Details</button>
+                            <button class="btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" data-type="apartment">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Luxury Apartment">
+                        <div class="property-status">For Rent</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">$3,500/mo</div>
+                        <h3 class="property-title">Luxury Downtown Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Manhattan, NY</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-outline">View Details</button>
+                            <button class="btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" data-type="condo">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800" alt="Beachfront Condo">
+                        <div class="property-badge">New</div>
+                        <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">$680,000</div>
+                        <h3 class="property-title">Beachfront Condo</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Miami Beach, FL</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-outline">View Details</button>
+                            <button class="btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card" data-type="house">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Contemporary Villa">
+                        <div class="property-status">For Sale</div>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">$1,250,000</div>
+                        <h3 class="property-title">Contemporary Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4,000 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-outline">View Details</button>
+                            <button class="btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <button class="btn-primary">View All Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Buy a Home</h3>
+                    <p>Find your place with an immersive photo experience as well as dozens of homes for sale in your area.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Sell Your Home</h3>
+                    <p>We'll help you sell your home quickly and for the highest possible price. Our marketing strategy is second to none.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Rent Properties</h3>
+                    <p>Discover rental properties that fit your lifestyle. We have a wide selection of houses, apartments, and condos.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Let us manage your property while you relax. We handle everything from maintenance to tenant relations.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="1500">0</h3>
+                    <p class="stat-label">Properties Sold</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="850">0</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600" alt="Real Estate Agent" class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1582407971994-05bd9ddd77a3?w=400" alt="Modern Home" class="about-img-small">
+                </div>
+                <div class="about-text">
+                    <h2>We Help You Find the Perfect Property</h2>
+                    <p class="about-description">With over 25 years of experience, we've helped thousands of families find their dream homes. Our dedicated team of professionals is committed to providing you with the best service possible.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trusted by thousands</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert negotiation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Complete paperwork support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 customer support</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Learn More About Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our satisfied clients have to say about us</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The team at DreamHome Realty made buying our first home so easy! They were patient, knowledgeable, and always available to answer our questions."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Home Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Selling our home was stress-free thanks to their professional approach. They got us top dollar and handled everything efficiently."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Home Seller</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As investors, we've worked with many agencies. DreamHome Realty stands out for their market knowledge and professionalism."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>Property Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to find your dream home? Contact us today!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Real Estate Blvd, Suite 100<br>Los Angeles, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@dreamhomerealty.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="">I'm interested in...</option>
+                                <option value="buying">Buying a Property</option>
+                                <option value="selling">Selling a Property</option>
+                                <option value="renting">Renting a Property</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>DreamHome Realty</h3>
+                    <p>Your trusted partner in finding the perfect home. We're committed to helping you achieve your real estate goals.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Buy a Home</a></li>
+                        <li><a href="#">Sell Your Home</a></li>
+                        <li><a href="#">Rent Properties</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Investment Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest listings and market updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DreamHome Realty. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
