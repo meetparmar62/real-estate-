@@ -279,7 +279,7 @@ const aboutBtn = document.querySelector('.about-text .btn-primary');
 
 if (aboutBtn) {
     aboutBtn.addEventListener('click', () => {
-        alert('Learn more about DreamHome Realty\n\nThis would navigate to an about us page with company history and team information.');
+        alert('Learn more about Shine Native\n\nThis would navigate to an about us page with company history and team information.');
     });
 }
 
@@ -330,4 +330,4 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-console.log('DreamHome Realty Website Loaded Successfully! 🏠');
+console.log('Shine Native Website Loaded Successfully! 🏠');
